@@ -1,0 +1,24 @@
+# memos-desktop configuration example
+# Copy this file to config.yaml and place it in one of the following locations
+# (checked in order of priority):
+#   1. Same directory as the executable (e.g. src-tauri/target/debug/config.yaml in dev)
+#   2. System config directory (Windows: %APPDATA%/memos-desktop/config.yaml)
+# If neither exists, built-in defaults are used.
+
+# Address the Memos server listens on (window loads http://{host}:{port})
+host: 127.0.0.1
+
+# Port the Memos server listens on
+port: 5230
+
+# Data directory (SQLite database lives here).
+# Leave empty or omit to store data next to the executable.
+# data: c:/users/user/memos
+
+# Window size (logical pixels)
+width: 1920
+height: 1080
+
+# Extra flags passed through to the memos server (optional)
+extra_args:
+  # - "--verbose"
